@@ -52,17 +52,12 @@ const Header = () => {
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/rooms">
-                                    DINING
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to="/products">
+                                <NavLinks to="/envents">
                                     PLAN AN EVENT
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/">
+                                <NavLinks to="/contact-us">
                                     CONTACT US
                                 </NavLinks>
                             </NavItem>
