@@ -5,11 +5,23 @@ background: #fff;
 padding: 80px 0;
 `;
 
+export const ContactRow = styled.div`
+display: flex;
+align-items: center;
+@media screen and (max-width: 760px) {
+    flex-direction: column;
+}
+`;
+
+export const ContactCol = styled.div`
+flex: 1;
+`;
+
 export const Title = styled.h1`
 color: #101522;
 padding-bottom: 10px;
 border-bottom: 4px solid #444;
-width: 33%;
+width: 66%
 `;
 
 export const Statement = styled.p`
@@ -17,14 +29,6 @@ padding: 20px 0;
 `;
 
 export const ContactWrapper = styled.div`
-shadowColor: #000;
-shadowOffset: {
-    width: 0;
-    height: 10px;
-};
-shadowRadius: 5px;
-shadowOpacity: 0.12px;
-elevation: 6;
 `;
 
 export const Resort = styled.p`
@@ -54,4 +58,19 @@ padding: 5px 0;
 
 export const Line = styled.div`
 border-bottom: 0.01em solid #bbb; 
+margin : 50px 0;
+`;
+
+export const ImgWrapper = styled.div`
+max-width: 555px;
+// display: flex;
+`;
+
+export const Img = styled.img`
+padding-right: 0;
+border: 0;
+max-width: 100%;
+vertical-align: middle;
+display: inline-block;
+max-height: 500px;
 `;

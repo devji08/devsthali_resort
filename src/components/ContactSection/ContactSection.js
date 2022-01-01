@@ -1,28 +1,47 @@
 import React from 'react';
-import {ContactSec, Title, Statement, ContactWrapper, Resort, Address, Direction, Phone, Email, Line} from './ContactSection.elements.js';
+import {ContactSec, ContactRow, ContactCol, Title, Statement, ContactWrapper, Resort, Address, Direction, Phone, Email, Line, ImgWrapper, Img} from './ContactSection.elements.js';
 import { Container } from '../../globalStyles';
 
-const ContactSection = ({title, statement, resort, address, direction, phone, email}) => {
+const ContactSection = ({title, statement, resort, address, direction, phone, email, img, alt, title2, statement2, statement3, statement4}) => {
     return (
         <>
         <ContactSec>
             <Container>
-                <Title>{title}</Title>
-                <Statement>{statement}</Statement>
-                
-                <ContactWrapper>
-                    <Resort>{resort}</Resort>
-                    <Address>{address}</Address>
-                    <Phone>Phone: {phone}</Phone>
-                    <Email>Email: {email}</Email>
-                    <Direction href = {direction} target = "_blank">Get Direction →</Direction>
-                </ContactWrapper>
+                <ContactRow>
+                    <ContactCol>
+                        <Title>{title}</Title>
+                        <Statement>{statement}</Statement>
+                        <ContactWrapper>
+                            <Resort>{resort}</Resort>
+                            <Address>{address}</Address>
+                            <Phone>Phone: {phone}</Phone>
+                            <Email>Email: {email}</Email>
+                            <Direction href = {direction} target = "_blank">Get Direction →</Direction>
+                        </ContactWrapper>
+                    </ContactCol>
+                    <ContactCol>
+                        <ImgWrapper>
+                            <Img src = {img} alt = {alt}></Img>
+                        </ImgWrapper>
+                    </ContactCol>
+                </ContactRow>
+                <Line></Line>
+                <ContactRow>
+                    <ContactCol>
+                        <Title>{title2}</Title>
+                        <Statement>{statement2}</Statement>
+                        <Statement>{statement3}</Statement>
+                        <Statement>{statement4}</Statement>
+                        <ImgWrapper>
+                            <Img src = {img} alt = {alt}></Img>
+                        </ImgWrapper>
+                    </ContactCol>
+                    <ContactCol>
+
+                    </ContactCol>
+                </ContactRow>
             </Container>
         </ContactSec>
-        <Container>
-            <Line></Line>
-        </Container>
-        <ContactSec></ContactSec>
         </>
     )
 }
