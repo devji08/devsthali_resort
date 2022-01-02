@@ -1,6 +1,37 @@
 import React from 'react';
-import {ContactSec, ContactRow, ContactCol, Title, Statement, ContactWrapper, Resort, Address, Direction, Phone, Email, Line, ImgWrapper, Img} from './ContactSection.elements.js';
-import { Container } from '../../globalStyles';
+import {ContactSec, ContactRow, ContactCol, Title, Statement, ContactWrapper, Resort, Address, Direction, Phone, Email, Line, ImgWrapper, Img, FormRow, FormCol, Label, TextField, TextArea, Term} from './ContactSection.elements.js';
+import { Container, Button } from '../../globalStyles';
+
+const FormSec = () => {
+    return(
+        <FormRow>
+            <FormCol>
+                <Label>First name <sup>*</sup></Label>
+                <TextField></TextField>
+            </FormCol>
+            <FormCol>
+                <Label>Last name <sup>*</sup></Label>
+                <TextField></TextField>
+            </FormCol>
+            <FormCol>
+                <Label>Email address <sup>*</sup></Label>
+                <TextField></TextField>
+            </FormCol>
+            <FormCol>
+                <Label>Phone number <sup>*</sup></Label>
+                <TextField></TextField>
+            </FormCol>
+            <FormCol>
+                <Label>How can we help you ?</Label>
+                <TextArea></TextArea>
+            </FormCol>
+            <FormCol>
+                <Button big fontBig>Submit</Button>
+                <Term>By clicking submit, you agree to Devsathali Terms and processing of your personal data as described in our Privacy Policy.</Term>
+            </FormCol>
+        </FormRow>
+    )
+}
 
 const ContactSection = ({title, statement, resort, address, direction, phone, email, img, alt, title2, statement2, statement3, statement4}) => {
     return (
@@ -36,9 +67,7 @@ const ContactSection = ({title, statement, resort, address, direction, phone, em
                             <Img src = {img} alt = {alt}></Img>
                         </ImgWrapper>
                     </ContactCol>
-                    <ContactCol>
-
-                    </ContactCol>
+                        <FormSec/>
                 </ContactRow>
             </Container>
         </ContactSec>

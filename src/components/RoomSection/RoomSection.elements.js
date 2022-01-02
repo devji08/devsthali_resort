@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const RoomSec = styled.div`
 padding: 160px 0;
-background: ${({lightBg}) => (lightBg ? '#fff' : '#101522')};
+background: ${({lightBg}) => (lightBg ? '#fff' : '#1723')};
 `;
 
 export const RoomRow = styled.div`
@@ -43,7 +43,8 @@ margin-bottom: 24px;
 font-size: 48px;
 letter-spacing: 5px;
 line-height: 1.1;
-color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};
+color: #1c2237;
+// color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};
 `;
 
 export const Content = styled.p`
@@ -51,7 +52,8 @@ max-widht: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line=height: 24px;
-color: ${({lightText}) => (lightText ? '#a9b3c1' : '#1c2237')};
+color: #777;
+// color: ${({lightText}) => (lightText ? '#a9b3c1' : '#1c2237')};
 `;
 
 export const ImgWrapper = styled.div`

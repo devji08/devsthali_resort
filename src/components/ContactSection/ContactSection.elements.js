@@ -74,3 +74,38 @@ vertical-align: middle;
 display: inline-block;
 max-height: 500px;
 `;
+
+export const FormRow = styled.div`
+flex: 1;
+// align-self: flex-start;
+padding-top: 40px;
+`;
+
+export const FormCol = styled.div`
+padding: 10px 0;
+`;
+
+export const Label = styled.p`
+padding: 5px 0;
+color: #777;
+`;
+
+export const TextField = styled.input`
+width: 100%;
+height: 40px;
+border: 1px solid #ddd;
+border-radius: 5px;
+`;
+
+export const TextArea = styled.textarea`
+width: 100%;
+height: 160px;
+border: 1px solid #ddd;
+border-radius: 5px;
+`;
+
+export const Term = styled.p`
+color: #999;
+font-size: 0.8rem;
+padding: 10px 0;
+`;

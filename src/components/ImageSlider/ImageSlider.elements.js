@@ -43,6 +43,7 @@ user-select: none;
 export const CarouselImageWrapper = styled.div`
 display: flex;
 height: 100%;
+width: 100%;
 `;
 
 export const CarouselImage = styled.div`
