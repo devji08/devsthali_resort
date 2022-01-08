@@ -1,13 +1,14 @@
 import React from 'react';
 import InfoSection from '../../components/InfoSection/InfoSection'
 import Pricing from '../../components/Pricing/Pricing'
-import ImageSlider from '../../components/ImageSlider/ImageSlider'
+import Carousel from '../../components/Carousel/Carousel';
+
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 
 const Home = () => {
     return(
         <>
-            <ImageSlider slides = {homeObjFour}/>
+            <Carousel slides = {homeObjFour}></Carousel>
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
             <InfoSection {...homeObjThree}/>

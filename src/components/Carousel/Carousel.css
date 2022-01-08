@@ -1,0 +1,89 @@
+.carousel {
+    position: relative;
+    height: 300px;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, .5);
+    z-index: 2;
+    cursor: pointer;
+    padding: 0 .5rem;
+    border-radius: .25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.arrowButton:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.left {
+    left: 32px;
+}
+
+.right {
+    right: 32px;
+}
+
+.slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    display: grid;
+    transition: 2000ms  opacity ease-in-out;
+    transition-delay: 2000ms;
+    gap: 1.5rem;
+    object-fit: cover;
+}
+
+.active {
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.imgText {
+    grid-row : 1/2;
+    grid-column: 1/2;
+    align-content: center;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    text-shadow: 1px 5px 10px #000000;
+    color: rgba(255, 255, 255, .8);
+    font-family: Calibri-bold;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    text-shadow: 1px 5px 10px #000000;
+    font-family: Calibri;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: rgba(255, 255, 255, .8);
+}

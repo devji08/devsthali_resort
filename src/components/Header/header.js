@@ -52,7 +52,7 @@ const Header = () => {
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/envents">
+                                <NavLinks to="/events">
                                     PLAN AN EVENT
                                 </NavLinks>
                             </NavItem>

@@ -19,6 +19,7 @@ const Routes = () => {
                 <Route exact path = '/' component = {Home}/>
                 <Route exaxt path = '/rooms' component = {Rooms}/>
                 <Route exact path = '/contact-us' component= {ContactUs}/>
+                {/* <Route exact path = '/events' component= {Carousel}/> */}
             </Switch>
             <Footer/>
         </Router>
