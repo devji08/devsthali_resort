@@ -16,6 +16,11 @@ const Carousel = ({slides}) => {
         setCurrent(current === 0 ? length-1 : current - 1);
     }
 
+    const setSlide = (index) => {
+        setCurrent(index);
+        console.log(index);
+    }
+
     useEffect(() => {
         const interval = setInterval(() => {
           nextSlide();
@@ -31,6 +36,9 @@ const Carousel = ({slides}) => {
         <div className='carousel'>
             <IoIosArrowBack className='arrowButton left' onClick={prevSlide}/>
             <IoIosArrowForward className='arrowButton right' onClick={nextSlide}/>
+            <div className='slideButtons'>
+                {slides.map((slide, index) => <div className='slideButtonContainer' key={index} onClick={()=>setSlide(index)}><button className ='slideButton'/></div>)}
+            </div>
             <ul className='slides'>
                 {slides.map((slide, index) => {
                         return (

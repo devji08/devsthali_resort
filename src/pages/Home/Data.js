@@ -1,6 +1,7 @@
 import svg1 from '../../images/svg-1.svg';
 import profile from '../../images/profile.jpg';
 import svg2 from '../../images/svg-2.svg';
+import image1 from '../../images/image1.jpg';
 import image2 from '../../images/image2.jpg';
 import image3 from '../../images/image3.jpg';
 
@@ -56,10 +57,10 @@ export const homeObjThree = {
 
 export const homeObjFour = [
     {
-        src: profile,
+        src: image1,
         alt: "alt-text",
-        title: "Devsthali Holidays",
-        subtitle: "Experience the beauty of mesmerising destinations"
+        title: "Royal Experiences",
+        subtitle: "Relive the splendour of a royal bygone era"
     },
     {
         src: image2,
