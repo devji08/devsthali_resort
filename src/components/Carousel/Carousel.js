@@ -37,7 +37,11 @@ const Carousel = ({slides}) => {
             <IoIosArrowBack className={`${styles.arrowButton} ${styles.left}`} onClick={prevSlide}/>
             <IoIosArrowForward className={`${styles.arrowButton} ${styles.right}`} onClick={nextSlide}/>
             <div className={styles.slideButtons}>
-                {slides.map((slide, index) => <div className={styles.slideButtonContainer} key={index} onClick={()=>setSlide(index)}><button className ={styles.slideButton}/></div>)}
+                {slides.map((slide, index) => 
+                    <div className={index==current ? `${styles.activeSlideButtonContainer}` : `${styles.slideButtonContainer}`} key={index} onClick={()=>setSlide(index)}>
+                        <button className ={styles.slideButton}/>
+                    </div>
+                )}
             </div>
             <ul className='slides'>
                 {slides.map((slide, index) => {

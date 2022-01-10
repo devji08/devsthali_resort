@@ -108,8 +108,18 @@
     cursor: pointer;
 }
 
+.activeSlideButtonContainer {
+    border-radius: .25rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    height: .5rem;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
 .slideButtonContainer:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .slideButton {
     width: 2rem;

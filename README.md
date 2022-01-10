@@ -1,6 +1,6 @@
 # Demo
 
-You can find the website running at [https://devsthaliresort.web.app/](https://devsthaliresort.web.app/).
+You can find the website running at [https://devsthaliresort.web.app](https://devsthaliresort.web.app).
 
 
 ## Available Scripts
