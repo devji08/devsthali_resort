@@ -29,6 +29,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+
+### `firebase`
+
+Follow the following steps
+
+yarn add global firebase-tools
+firebase login
+firebase init hosting (set build as your deployment directory)
+yarn build
+firebase deploy
+
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
