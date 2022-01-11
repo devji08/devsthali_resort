@@ -36,7 +36,7 @@ export const homeObjTwo = {
     img: profile,
     alt: 'Image',
     start: 'true',
-    link: 'events'
+    link: '/events'
 }
 
 export const homeObjThree = {
@@ -52,7 +52,8 @@ export const homeObjThree = {
     topLine: 'Devsthali Associates',
     img: svg2,
     alt: 'Image',
-    start: ''
+    start: '',
+    link: '/home'
 }
 
 export const homeObjFour = [

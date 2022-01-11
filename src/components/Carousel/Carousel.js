@@ -2,11 +2,9 @@ import React, {useState, useEffect, useCallback} from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import styles from './Carousel.module.css';
 
-const Carousel = ({slides}) => {
-
+const Carousel = ({height, slides}) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
-    
 
     const nextSlide = useCallback(() => {
         setCurrent(current === length-1 ? 0 : current + 1);
@@ -33,7 +31,7 @@ const Carousel = ({slides}) => {
     }
 
     return(
-        <div className={styles.carousel}>
+        <div id = 'carousel' className={styles.carousel}>
             <IoIosArrowBack className={`${styles.arrowButton} ${styles.left}`} onClick={prevSlide}/>
             <IoIosArrowForward className={`${styles.arrowButton} ${styles.right}`} onClick={nextSlide}/>
             <div className={styles.slideButtons}>
@@ -47,7 +45,7 @@ const Carousel = ({slides}) => {
                 {slides.map((slide, index) => {
                         return (
                             <li key = {index} className= {index === current ? `${styles.slide} ${styles.active}` : styles.slide}>
-                                <img src = {slide.src} alt = {slide.alt} className={styles.img}/>
+                                <img src = {slide.src} alt = {slide.alt} className={styles.carouselImg} style={{'height' : height}}/>
                                 <div className={styles.imgText}>
                                     <h1 className={styles.title}>{slide.title}</h1>
                                     <h2 className={styles.subtitle}>{slide.subtitle}</h2>
@@ -57,6 +55,7 @@ const Carousel = ({slides}) => {
                     }
             </div>
         </div>
+        
     );
 }
 
