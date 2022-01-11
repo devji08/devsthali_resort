@@ -1,6 +1,5 @@
 .carousel {
     position: relative;
-    height: 300px;
 }
 
 .arrowButton {
@@ -22,34 +21,27 @@
 }
 
 .left {
-    left: 32px;
+    left: 2rem;
 }
 
 .right {
-    right: 32px;
+    right: 2rem;
 }
 
 .slides {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
+    display: grid;
 }
 
 .slide {
-    position: absolute;
-    inset: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
     opacity: 0;
     display: grid;
-    transition: 1000ms  opacity ease-in-out;
-    transition-delay: 1000ms;
-    gap: 1.5rem;
-    object-fit: cover;
+    transition: 2000ms  opacity ease-in;
 }
 
 .active {
     opacity: 1;
-    transition-delay: 0ms;
 }
 
 .img {
@@ -63,28 +55,24 @@
 .imgText {
     grid-row : 1/2;
     grid-column: 1/2;
-    align-content: center;
     display: flex;
     flex-direction:column;
     justify-content:flex-end;
     padding: 30px;
+    text-align: center;
+    text-shadow: 1px 5px 10px #000000;
+    line-height: 1;
 }
 
 .title {
-    text-align: center;
-    text-shadow: 1px 5px 10px #000000;
-    color: rgba(255, 255, 255, .8);
-    font-family: Calibri-bold;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, .7);
     padding: 10px;
 }
 
 .subtitle {
-    text-align: center;
-    text-shadow: 1px 5px 10px #000000;
     font-family: Calibri;
     font-size: 1.25rem;
-    line-height: 1;
     color: rgba(255, 255, 255, .8);
 }
 
@@ -106,21 +94,13 @@
     padding: 5px;
     align-items: center;
     cursor: pointer;
+    transition: 1000ms ease;
 }
 
-.activeSlideButtonContainer {
-    border-radius: .25rem;
+.activeSlideButtonContainer, .slideButtonContainer:hover {
     background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    height: .5rem;
-    padding: 5px;
-    align-items: center;
-    cursor: pointer;
 }
 
-.slideButtonContainer:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-}
 .slideButton {
     width: 2rem;
     height: .125rem;

@@ -60,18 +60,18 @@ export const homeObjFour = [
         src: image1,
         alt: "alt-text",
         title: "Royal Experiences",
-        subtitle: "Relive the splendour of a royal bygone era"
+        subtitle: "Relive the splendour of a royal bygone era to its fullest."
     },
     {
         src: image2,
         alt: "alt-text",
         title: "Royal Experiences",
-        subtitle: "Relive the splendour of a royal bygone era"
+        subtitle: "Relive the splendour of a royal bygone era to its fullest."
     },
     {
         src: image3,
         alt: "alt-text",
         title: "Royal Experiences",
-        subtitle: "Relive the splendour of a royal bygone era"
+        subtitle: "Relive the splendour of a royal bygone era to its fullest."
     }
 ]
