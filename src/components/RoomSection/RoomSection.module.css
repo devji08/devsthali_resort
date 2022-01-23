@@ -1,0 +1,21 @@
+.container {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.content {
+    /* flex: 2; */
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.description {
+
+}
+
+.button {
+    
+}

@@ -2,18 +2,18 @@ import React from 'react';
 import InfoSection from '../../components/InfoSection/InfoSection'
 import Pricing from '../../components/Pricing/Pricing'
 import Carousel from '../../components/Carousel/Carousel';
-
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
+import Utilities from '../../components/Utilities/Utilities';
+import { homeObjOne, homeObjTwo, homeObjFour, utilityArray } from './Data';
 
 const Home = () => {
     return(
-        <>
-            <Carousel height='300px' slides = {homeObjFour}></Carousel>
+        <div>
+            <Carousel height='40vh' slides = {homeObjFour}/>
+            <Utilities utilityArray={utilityArray}/>
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
-            <InfoSection {...homeObjThree}/>
             <Pricing />
-        </>
+        </div>
     )
 }
 
