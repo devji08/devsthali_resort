@@ -26,7 +26,7 @@ function Pricing() {
         <PricingWrapper>
           <PricingHeading>Offers & Promotions</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <TiGroup />
@@ -42,7 +42,7 @@ function Pricing() {
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <MdAttachMoney />
@@ -58,7 +58,7 @@ function Pricing() {
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <MdBusinessCenter />

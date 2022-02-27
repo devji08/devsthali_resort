@@ -40,7 +40,7 @@ const Header = () => {
                     <NavbarContainer>
                         <NavLogo to = "/" onClick={closeMobileMenu}>
                             <NavIcon/>
-                            Devsthali Resort
+                            Devsthali Brar Resort
                         </NavLogo>
                         <MobileIcon onClick = {handleClick}>
                             {click ? <FaTimes/> : <FaBars/>}

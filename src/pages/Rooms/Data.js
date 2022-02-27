@@ -6,7 +6,7 @@ import image3 from '../../images/image3.jpg';
 export const RoomObjOne = {
     lightBg: false,
     description: 'Create memories for life. We aim to interpret the tradition of hospitality in a refreshingly modern way to create unique experiences and lifelong memories just for you and your loved ones.', 
-    title: 'SUPER DELUX ROOM', 
+    title: 'DELUX ROOM', 
     lightText: true, 
     img: svg1,
     alt: 'Image',
@@ -15,7 +15,7 @@ export const RoomObjOne = {
 export const RoomObjTwo = {
     lightBg: true,
     description: 'Create memories for life. We aim to interpret the tradition of hospitality in a refreshingly modern way to create unique experiences and lifelong memories just for you and your loved ones.', 
-    title: 'DELUX ROOM', 
+    title: 'STANDARD ROOM', 
     lightText: false, 
     img: svg1,
     alt: 'Image',

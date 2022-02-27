@@ -30,7 +30,7 @@ export const homeObjTwo = {
     lightTopLine: true, 
     lightTextDesc: true,  
     buttonLabel: 'Explore', 
-    description: 'With so much to organize, you can relax in the knowledge that we will take care of your every need, ensuring that your event is everything you want it to be. Devsthali Resort offer a perfect destination that ensures a blend of traditional and exquisite modern luxuries, making your event a memorable one.', 
+    description: 'With so much to organize, you can relax in the knowledge that we will take care of your every need, ensuring that your event is everything you want it to be. Devsthali Brar Resort offer a perfect destination that ensures a blend of traditional and exquisite modern luxuries, making your event a memorable one.', 
     headline: 'CELEBRATE WITH DEVSTHALI', 
     lightText: true, 
     topLine: 'Devsthali Associates',

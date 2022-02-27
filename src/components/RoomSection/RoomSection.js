@@ -1,39 +1,25 @@
 import React from 'react';
-// import { Container } from '../../globalStyles.js';
-// import {RoomSec, RoomRow, RoomCol, TextWrapper, Headline, Content, ImgWrapper, Img} from './RoomSection.elements.js'
 import styles from './RoomSection.module.css'
 import Carousel from '../Carousel/Carousel.js';
+import { useNavigate } from 'react-router-dom';
 
 function RoomSection ({slides, content}) {
+    const navigate = useNavigate();
+
     return(
-        // <RoomSec lightBg = {lightBg}>
-        //     <Container>
-        //         <RoomRow>
-        //             <RoomCol>
-        //                 <TextWrapper>
-        //                     <Headline lightText = {lightText}>{title}</Headline>
-        //                     <Content lightText = {lightText}>{content}</Content>
-        //                 </TextWrapper>
-        //             </RoomCol>
-        //             <RoomCol>
-        //                 <ImgWrapper>
-        //                     <Img src = {img} alt = {alt}></Img>
-        //                 </ImgWrapper>
-        //             </RoomCol>
-        //         </RoomRow>
-        //     </Container>
-        // </RoomSec>
         <div className={styles.container}>
-            <div className={styles.content}>
-                <div className={styles.title}>
-                    {content.title}
-                </div>
-                <div className={styles.description}>
-                    {content.description}
-                </div>
-                <button className={styles.button}>Book Now</button>
+            <div className={styles.title}>
+                {content.title}
             </div>
-            <Carousel styles = {{flex: 2}} slides = {slides} height = '15rem'/>
+            <div className={styles.images}>
+                <Carousel className={styles.images} slides = {slides} height = '15rem' slideButton/>
+            </div>
+            <div className={styles.description}>
+                {content.description}
+            </div>
+            <div className={styles.button_div}>
+                <button className={styles.button} onClick = {() => navigate("/contact-us")} >Book Now</button>
+            </div>
         </div>
     )
 }

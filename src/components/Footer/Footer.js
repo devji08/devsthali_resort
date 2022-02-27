@@ -48,7 +48,7 @@ const Footer = () => {
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Celebrate</FooterLinkTitle>
-                        <FooterLink to='/'>Weddings at Devsthali Resort</FooterLink>
+                        <FooterLink to='/'>Weddings</FooterLink>
                         <FooterLink to='/'>Meetingst</FooterLink>
                         <FooterLink to='/'>Events</FooterLink>
                         <FooterLink to='/'>Conference</FooterLink>
@@ -77,7 +77,7 @@ const Footer = () => {
                         <SocialIcon/>
                         Devstahli Resort
                     </SocialLogo>
-                    <WebsiteRights>Devsthali Resort © 2021</WebsiteRights>
+                    <WebsiteRights>Devsthali Brar Resort © 2021</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='/' targer="_blank" aria-label="Facebook">
                             <FaFacebook/>

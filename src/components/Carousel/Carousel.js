@@ -2,7 +2,8 @@ import React, {useState, useEffect, useCallback} from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import styles from './Carousel.module.css';
 
-const Carousel = ({height, slides}) => {
+const Carousel = ({height, slides, slideButton, tabButton, imageDescription}) => {
+
     const [current, setCurrent] = useState(0);
     const length = slides.length;
 
@@ -32,24 +33,24 @@ const Carousel = ({height, slides}) => {
 
     return(
         <div id = 'carousel' className={styles.carousel}>
-            <IoIosArrowBack className={`${styles.arrowButton} ${styles.left}`} onClick={prevSlide}/>
-            <IoIosArrowForward className={`${styles.arrowButton} ${styles.right}`} onClick={nextSlide}/>
-            <div className={styles.slideButtons}>
+            {slideButton && <IoIosArrowBack className={`${styles.arrowButton} ${styles.left}`} onClick={prevSlide}/>}
+            {slideButton &&<IoIosArrowForward className={`${styles.arrowButton} ${styles.right}`} onClick={nextSlide}/>}
+            {tabButton && <div className={styles.slideButtons}>
                 {slides.map((slide, index) => 
                     <div className={index === current ? `${styles.activeSlideButtonContainer} ${styles.slideButtonContainer}` : styles.slideButtonContainer} key={index} onClick={()=>setSlide(index)}>
                         <button className ={styles.slideButton}/>
                     </div>
                 )}
-            </div>
+            </div>}
             <div className={styles.slides}>
                 {slides.map((slide, index) => {
                         return (
                             <li key = {index} className= {index === current ? `${styles.slide} ${styles.active}` : styles.slide}>
                                 <img src = {slide.src} alt = {slide.alt} className={styles.carouselImg} style={{'height' : height}}/>
-                                <div className={styles.imgText}>
+                                {imageDescription && <div className={styles.imgText}>
                                     <h1 className={styles.title}>{slide.title}</h1>
                                     <h2 className={styles.subtitle}>{slide.subtitle}</h2>
-                                </div>
+                                </div>}
                             </li>
                         )})
                     }
