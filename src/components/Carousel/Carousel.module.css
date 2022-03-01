@@ -45,7 +45,6 @@
 }
 
 .carouselImg {
-    height: 300px;
     width: 100%;
     object-fit: cover;
     grid-row: 1/2;

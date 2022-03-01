@@ -1,8 +1,10 @@
 import svg1 from '../../images/svg-1.svg';
 import profile from '../../images/profile.jpg';
-import image1 from '../../images/image1.jpg';
-import image2 from '../../images/image2.jpg';
-import image3 from '../../images/image3.jpg';
+import Front_View from '../../images/Front_View.jpg';
+import Back_Hut from '../../images/Back_Hut.jpg';
+import Restaurant_1 from '../../images/Restaurant_1.jpg';
+import Room_1 from '../../images/Room_1.jpg';
+
 import { FaWifi, FaBed, FaSwimmingPool, FaRegBell } from 'react-icons/fa';
 import {GiHotMeal, GiJeep} from 'react-icons/gi';
 
@@ -43,23 +45,31 @@ export const homeObjTwo = {
 
 export const homeObjFour = [
     {
-        src: image1,
+        src: Front_View,
         alt: "alt-text",
         title: "Royal Experiences",
         subtitle: "Relive the splendour of a royal bygone era to its fullest."
     },
     {
-        src: image2,
+        src: Back_Hut,
         alt: "alt-text",
         title: "Royal Experiences",
         subtitle: "Relive the splendour of a royal bygone era to its fullest."
     },
     {
-        src: image3,
+        src: Room_1,
+        alt: "alt-text",
+        title: "Royal Experiences",
+        subtitle: "Relive the splendour of a royal bygone era to its fullest."
+    },
+    {
+        src: Restaurant_1,
         alt: "alt-text",
         title: "Royal Experiences",
         subtitle: "Relive the splendour of a royal bygone era to its fullest."
     }
+    
+
 ];
 
 const iconStyle = {

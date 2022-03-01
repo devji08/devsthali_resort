@@ -12,15 +12,6 @@
         'button';
 }
 
-@media screen and (min-width: 725px) {
-    .container {
-        grid-template-areas: 
-            'title image'
-            'description image'
-            'button image';
-    }
-}
-
 .title {
     font-size: 2rem;
     font-family: Calibri;
@@ -29,7 +20,6 @@
 
 .images {
     grid-area: image;
-    display: flex;
 }
 
 .description {
@@ -37,7 +27,6 @@
 }
 
 .button_div {
-    margin-left: auto;
     grid-area: button;
 }
 
@@ -53,3 +42,19 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 725px) {
+    .container {
+        grid-template-areas: 
+            'title image'
+            'description image'
+            'button image';
+    }
+
+    .images {
+        width: 400px;
+    }
+
+    .button_div {
+        margin-left: auto;
+    }
+}

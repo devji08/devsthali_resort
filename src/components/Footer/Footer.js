@@ -75,7 +75,7 @@ const Footer = () => {
                 <SocialMediaWrap>
                     <SocialLogo to='/'>
                         <SocialIcon/>
-                        Devstahli Resort
+                        Devsthali Brar Resort
                     </SocialLogo>
                     <WebsiteRights>Devsthali Brar Resort © 2021</WebsiteRights>
                     <SocialIcons>
