@@ -41,30 +41,30 @@ const Footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinksItems>
                         <FooterLinkTitle>Explore & Experience</FooterLinkTitle>
-                        <FooterLink to='/'>Rooms</FooterLink>
+                        <FooterLink to='/rooms'>Rooms</FooterLink>
                         <FooterLink to='/'>Gallery</FooterLink>
                         <FooterLink to='/'>Career</FooterLink>
                         <FooterLink to='/'>Investors</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Celebrate</FooterLinkTitle>
-                        <FooterLink to='/'>Weddings</FooterLink>
-                        <FooterLink to='/'>Meetingst</FooterLink>
-                        <FooterLink to='/'>Events</FooterLink>
-                        <FooterLink to='/'>Conference</FooterLink>
+                        <FooterLink to='/events'>Weddings</FooterLink>
+                        <FooterLink to='/events'>Meetings</FooterLink>
+                        <FooterLink to='/events'>Events</FooterLink>
+                        <FooterLink to='/events'>Conference</FooterLink>
                     </FooterLinksItems>
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
                     <FooterLinksItems>
                         <FooterLinkTitle>Discover</FooterLinkTitle>
-                        <FooterLink to='/'>About Us</FooterLink>
+                        <FooterLink to='/contact-us'>About Us</FooterLink>
                         <FooterLink to='/'>The Press Room</FooterLink>
                         <FooterLink to='/'>Our Newsletter</FooterLink>
                         <FooterLink to='/'>Our Blog</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Connect</FooterLinkTitle>
-                        <FooterLink to='/'>Contact Us</FooterLink>
+                        <FooterLink to='/contact-us'>Contact Us</FooterLink>
                         <FooterLink to='/'>Instagram</FooterLink>
                         <FooterLink to='/'>Facebook</FooterLink>
                         <FooterLink to='/'>Twitter</FooterLink>

@@ -63,7 +63,7 @@ const Header = () => {
                             </NavItem>
                             <NavItemBtn>
                                 {button ? (
-                                    <NavBtnLink to = "/sign-in">
+                                    <NavBtnLink to = "/">
                                         <Button primary>SIGN IN</Button>
                                     </NavBtnLink>
                                 ) : (

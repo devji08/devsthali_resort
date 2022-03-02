@@ -1,0 +1,8 @@
+.container {
+    height: 60vh;
+    padding: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 50vh;
+    color: rgba(43, 29, 29, 0.7);
+}

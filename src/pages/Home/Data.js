@@ -80,7 +80,7 @@ const iconStyle = {
 export const utilityArray = [
     {
         img: <FaRegBell style={iconStyle}/>,
-        name: 'Friendly Service'
+        name: 'Premium Service'
     },
     {
         img: <GiHotMeal style={iconStyle}/>,
