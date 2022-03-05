@@ -16,6 +16,14 @@ function RoomSection ({slides, content}) {
             </div>
             <div className={styles.description}>
                 {content.description}
+                <ul className={styles.features}>
+                    {content.features.map(feature =>
+                        <li className = {styles.feature}>
+                            <div className = {styles.featureImage}> {feature.img} </div>
+                            <section className = {styles.featureName}>{feature.name}</section>
+                        </li>
+                    )}
+                </ul>
             </div>
             <div className={styles.button_div}>
                 <button className={styles.button} onClick = {() => navigate("/contact-us")} >Book Now</button>

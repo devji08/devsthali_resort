@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from '../../globalStyles';
 import { TiGroup } from 'react-icons/ti';
-import { MdBusinessCenter, MdAttachMoney } from 'react-icons/md';
+import { MdBusinessCenter } from 'react-icons/md';
+import { FaCrown } from 'react-icons/fa';
 
 import { IconContext } from 'react-icons/lib';
 import {
@@ -32,8 +33,8 @@ function Pricing() {
                   <TiGroup />
                 </PricingCardIcon>
                 <PricingCardPlan>Group Trip</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per room</PricingCardLength>
+                <PricingCardCost>₹4500</PricingCardCost>
+                <PricingCardLength>Per room</PricingCardLength>
                 <PricingCardFeatures>
                   <PricingCardFeature>Triple room occupancy</PricingCardFeature>
                   <PricingCardFeature>Morning buffet</PricingCardFeature>
@@ -45,11 +46,11 @@ function Pricing() {
             <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <MdAttachMoney />
+                  <FaCrown />
                 </PricingCardIcon>
                 <PricingCardPlan>Royal Service</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per room</PricingCardLength>
+                <PricingCardCost>₹3500</PricingCardCost>
+                <PricingCardLength>Per room</PricingCardLength>
                 <PricingCardFeatures>
                   <PricingCardFeature>Triple meal</PricingCardFeature>
                   <PricingCardFeature>Gym & Spa</PricingCardFeature>
@@ -64,8 +65,8 @@ function Pricing() {
                   <MdBusinessCenter />
                 </PricingCardIcon>
                 <PricingCardPlan>Bussiness Trip</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per room</PricingCardLength>
+                <PricingCardCost>₹3000</PricingCardCost>
+                <PricingCardLength>Per room</PricingCardLength>
                 <PricingCardFeatures>
                   <PricingCardFeature>Conference Hall</PricingCardFeature>
                   <PricingCardFeature>Morning Buffet</PricingCardFeature>

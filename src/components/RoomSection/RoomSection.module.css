@@ -42,6 +42,26 @@
     cursor: pointer;
 }
 
+.features {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.feature {
+    display: flex;
+    padding: .25rem;
+    gap: .5rem;
+    align-items: center;
+}
+
+.featureImage {
+    width: 1.5rem;
+}
+
+.featureName {
+
+}
+
 @media screen and (min-width: 725px) {
     .container {
         grid-template-areas: 
@@ -52,9 +72,5 @@
 
     .images {
         width: 30vw;
-    }
-
-    .button_div {
-        margin-left: auto;
     }
 }
