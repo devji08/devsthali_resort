@@ -3,7 +3,6 @@ import { Button } from '../../globalStyles';
 import {
     Nav,
     NavbarContainer, 
-    NavIcon, 
     NavLogo, 
     MobileIcon,
     NavMenu,
@@ -12,6 +11,8 @@ import {
     NavItemBtn,
     NavBtnLink
 } from './navbar.elements';
+import Logo from '../../images/DBR_Logo.png'
+import styles from './header.module.css'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 
@@ -39,13 +40,18 @@ const Header = () => {
                 <Nav>
                     <NavbarContainer>
                         <NavLogo to = "/" onClick={closeMobileMenu}>
-                            <NavIcon/>
+                                <img src={Logo} className = {styles.logo} alt = 'Logo'/>
                             Devsthali Brar Resort
                         </NavLogo>
                         <MobileIcon onClick = {handleClick}>
                             {click ? <FaTimes/> : <FaBars/>}
                         </MobileIcon>
                         <NavMenu onClick ={handleClick} click={click}>
+                            <NavItem>
+                                <NavLinks to="/about-us">
+                                    ABOUT US
+                                </NavLinks>
+                            </NavItem>
                             <NavItem>
                                 <NavLinks to="/rooms">
                                     FIND BOOKING
@@ -54,6 +60,11 @@ const Header = () => {
                             <NavItem>
                                 <NavLinks to="/events">
                                     PLAN AN EVENT
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="/gallery">
+                                    GALLERY
                                 </NavLinks>
                             </NavItem>
                             <NavItem>

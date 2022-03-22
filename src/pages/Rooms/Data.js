@@ -13,7 +13,7 @@ const iconStyle = {
 };
 
 export const ContentOne = {
-    title: 'DELUX ROOM', 
+    title: 'Forest Luxury Cottages', 
     description: 'Create memories for life. We aim to interpret the tradition of hospitality in a refreshingly modern way to create unique experiences and lifelong memories just for you and your loved ones.', 
     features: [
         {
@@ -36,7 +36,7 @@ export const ContentOne = {
 }
 
 export const ContentTwo = {
-    title: 'STANDARD ROOM', 
+    title: 'Forest Cottages', 
     description: 'Create memories for life. We aim to interpret the tradition of hospitality in a refreshingly modern way to create unique experiences and lifelong memories just for you and your loved ones.',
     features: [
         {

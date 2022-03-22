@@ -13,14 +13,16 @@ import {
     FooterLinksItems,
     FooterLinkTitle,
     FooterLink,
+    SocialMediaLink,
     SocialMedia,
     SocialMediaWrap,
     SocialLogo,
-    SocialIcon,
     WebsiteRights,
     SocialIcons,
     SocialIconLink
 } from './footer.elements';
+import Logo from '../../images/DBR_Logo.png'
+import styles from './footer.module.css'
 
 const Footer = () => {
     return (
@@ -42,7 +44,7 @@ const Footer = () => {
                     <FooterLinksItems>
                         <FooterLinkTitle>Explore & Experience</FooterLinkTitle>
                         <FooterLink to='/rooms'>Rooms</FooterLink>
-                        <FooterLink to='/'>Gallery</FooterLink>
+                        <FooterLink to='/gallery'>Gallery</FooterLink>
                         <FooterLink to='/'>Career</FooterLink>
                         <FooterLink to='/'>Investors</FooterLink>
                     </FooterLinksItems>
@@ -57,38 +59,40 @@ const Footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinksItems>
                         <FooterLinkTitle>Discover</FooterLinkTitle>
-                        <FooterLink to='/contact-us'>About Us</FooterLink>
+                        <FooterLink to='/about-us'>About Us</FooterLink>
                         <FooterLink to='/'>The Press Room</FooterLink>
                         <FooterLink to='/'>Our Newsletter</FooterLink>
                         <FooterLink to='/'>Our Blog</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
-                        <FooterLinkTitle>Connect</FooterLinkTitle>
-                        <FooterLink to='/contact-us'>Contact Us</FooterLink>
-                        <FooterLink to='/'>Instagram</FooterLink>
-                        <FooterLink to='/'>Facebook</FooterLink>
-                        <FooterLink to='/'>Twitter</FooterLink>
+                        <FooterLinkTitle>Social Media</FooterLinkTitle>
+                        <SocialMediaLink href='https://www.youtube.com/channel/UCbFt_aqSKdGyVBeensuUwFg' target='_blank'>Youtube</SocialMediaLink>
+                        <SocialMediaLink href='https://www.instagram.com/devsthalibrarresort/' target='_blank'>Instagram</SocialMediaLink>
+                        <SocialMediaLink href='https://www.facebook.com/profile.php?id=100078939610119' target='_blank'>Facebook</SocialMediaLink>
+                        <SocialMediaLink href='https://twitter.com/DevsthaliR' target='_blank'>Twitter</SocialMediaLink>
                     </FooterLinksItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/'>
-                        <SocialIcon/>
+                        <div style = {{height: '100%'}}>
+                            <img src={Logo} className = {styles.logo} alt = 'Logo'/>
+                        </div>
                         Devsthali Brar Resort
                     </SocialLogo>
                     <WebsiteRights>Devsthali Brar Resort © 2021</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href='/' targer="_blank" aria-label="Facebook">
+                        <SocialIconLink href='https://www.facebook.com/profile.php?id=100078939610119' target="_blank" aria-label="Facebook">
                             <FaFacebook/>
                         </SocialIconLink>
-                        <SocialIconLink href='/' targer="_blank" aria-label="Instagram">
+                        <SocialIconLink href='https://www.instagram.com/devsthalibrarresort/' target="_blank" aria-label="Instagram">
                             <FaInstagram/>
                         </SocialIconLink>
-                        <SocialIconLink href='/' targer="_blank" aria-label="YouTube">
+                        <SocialIconLink href='https://www.youtube.com/channel/UCbFt_aqSKdGyVBeensuUwFg' target="_blank" aria-label="YouTube">
                             <FaYoutube/>
                         </SocialIconLink>
-                        <SocialIconLink href='/' targer="_blank" aria-label="Twitter">
+                        <SocialIconLink href='https://twitter.com/DevsthaliR' target="_blank" aria-label="Twitter">
                             <FaTwitter/>
                         </SocialIconLink>
                     </SocialIcons>

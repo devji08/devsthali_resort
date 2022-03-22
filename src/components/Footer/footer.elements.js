@@ -114,6 +114,17 @@ margin-bottom: 0.5rem;
 }
 `;
 
+export const SocialMediaLink = styled.a`
+color: #fff;
+text-decoration: none;
+margin-bottom: 0.5rem;
+
+&:hover {
+    color: #0467fb;
+    transition: 0.3s ease-out;
+}
+`;
+
 export const SocialMedia = styled.section`
 max-width: 1000px;
 width: 100%;
