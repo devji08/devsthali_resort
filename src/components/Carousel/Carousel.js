@@ -45,13 +45,14 @@ const Carousel = ({height, slides, slideButton, tabButton, imageDescription}) =>
             <div className={styles.slides}>
                 {slides.map((slide, index) => {
                         return (
-                            <li key = {index} className= {index === current ? `${styles.slide} ${styles.active}` : styles.slide}>
+                            <div key = {index} className= {index === current ? `${styles.slide} ${styles.active}` : styles.slide}>
                                 <img src = {slide.src} alt = {slide.alt} className={styles.carouselImg} style={{'height' : height}}/>
                                 {imageDescription && <div className={styles.imgText}>
                                     <h1 className={styles.title}>{slide.title}</h1>
+                                    <div className={styles.imgTextDivider}> </div>
                                     <h2 className={styles.subtitle}>{slide.subtitle}</h2>
                                 </div>}
-                            </li>
+                            </div>
                         )})
                     }
             </div>

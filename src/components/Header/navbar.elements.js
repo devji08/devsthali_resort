@@ -28,6 +28,7 @@ color: #fff;
 justify-self: flex-start;
 cursor: pointer;
 text-decoration: none;
+// font-family: Barbershop-in-Thailand;
 font-size: 1.5rem;
 display: flex;
 align-items: center;

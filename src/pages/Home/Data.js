@@ -48,7 +48,7 @@ export const homeObjFour = [
         src: Front_View,
         alt: "alt-text",
         title: "Royal Experiences",
-        subtitle: "Relive the splendour of a royal bygone era to its fullest."
+        subtitle: "Relive the splendour of a royal bygone era to its deepest."
     },
     {
         src: Back_Hut,
@@ -60,7 +60,7 @@ export const homeObjFour = [
         src: Room_1,
         alt: "alt-text",
         title: "Royal Experiences",
-        subtitle: "Relive the splendour of a royal bygone era to its fullest."
+        subtitle: "Relive the splendour of a royal bygone era to its end."
     },
     {
         src: Restaurant_1,
