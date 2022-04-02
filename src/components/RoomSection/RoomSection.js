@@ -18,7 +18,7 @@ function RoomSection ({slides, content}) {
                 {content.description}
                 <ul className={styles.features}>
                     {content.features.map(feature =>
-                        <li className = {styles.feature}>
+                        <li className = {styles.feature} key={feature.name}>
                             <div className = {styles.featureImage}> {feature.img} </div>
                             <section className = {styles.featureName}>{feature.name}</section>
                         </li>

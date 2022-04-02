@@ -48,13 +48,18 @@ const Header = () => {
                         </MobileIcon>
                         <NavMenu onClick ={handleClick} click={click}>
                             <NavItem>
+                                <NavLinks to="/">
+                                    HOME
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
                                 <NavLinks to="/about-us">
                                     ABOUT US
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="/rooms">
-                                    FIND BOOKING
+                                    OUR ROOMS
                                 </NavLinks>
                             </NavItem>
                             <NavItem>

@@ -15,10 +15,10 @@ export const homeObjOne = {
     lightTopLine: false, 
     lightTextDesc: false, 
     buttonLabel: 'Get Started', 
-    description: 'Create memories for life. We aim to interpret the tradition of hospitality in a refreshingly modern way to create unique experiences and lifelong memories just for you and your loved ones.', 
+    description: 'If you want to get lost in the wilderness of exotic Jim Corbett National Park, Devsthali Brar Resort offers the best stay in the surrounding of Jim Corbett National Park. We offers Luxurious stay in Jim Corbett with warm hospitality with comfortable stay to the visitors who want to indulge in the peace and calmness of nature.', 
     headline: 'STAY AT DEVSTHALI', 
     lightText: false, 
-    topLine: 'Devsthali Associates',
+    topLine: 'Devsthali Hotels and Resorts',
     img: svg1,
     alt: 'Image',
     start: '',
@@ -35,7 +35,7 @@ export const homeObjTwo = {
     description: 'With so much to organize, you can relax in the knowledge that we will take care of your every need, ensuring that your event is everything you want it to be. Devsthali Brar Resort offer a perfect destination that ensures a blend of traditional and exquisite modern luxuries, making your event a memorable one.', 
     headline: 'CELEBRATE WITH DEVSTHALI', 
     lightText: true, 
-    topLine: 'Devsthali Associates',
+    topLine: 'Devsthali Hotels and Resorts',
     img: profile,
     alt: 'Image',
     start: 'true',
@@ -44,12 +44,6 @@ export const homeObjTwo = {
 
 
 export const homeObjFour = [
-    {
-        src: Front_View,
-        alt: "alt-text",
-        title: "Royal Experiences",
-        subtitle: "Relive the splendour of a royal bygone era to its deepest."
-    },
     {
         src: Back_Hut,
         alt: "alt-text",
@@ -67,6 +61,12 @@ export const homeObjFour = [
         alt: "alt-text",
         title: "Royal Experiences",
         subtitle: "Relive the splendour of a royal bygone era to its fullest."
+    },
+    {
+        src: Front_View,
+        alt: "alt-text",
+        title: "Royal Experiences",
+        subtitle: "Relive the splendour of a royal bygone era to its deepest."
     }
     
 

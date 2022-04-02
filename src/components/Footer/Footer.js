@@ -68,7 +68,7 @@ const Footer = () => {
                         <FooterLinkTitle>Social Media</FooterLinkTitle>
                         <SocialMediaLink href='https://www.youtube.com/channel/UCbFt_aqSKdGyVBeensuUwFg' target='_blank'>Youtube</SocialMediaLink>
                         <SocialMediaLink href='https://www.instagram.com/devsthalibrarresort/' target='_blank'>Instagram</SocialMediaLink>
-                        <SocialMediaLink href='https://www.facebook.com/profile.php?id=100078939610119' target='_blank'>Facebook</SocialMediaLink>
+                        <SocialMediaLink href='https://www.facebook.com/Devsthali-Brar-Resort-101768892474406' target='_blank'>Facebook</SocialMediaLink>
                         <SocialMediaLink href='https://twitter.com/DevsthaliR' target='_blank'>Twitter</SocialMediaLink>
                     </FooterLinksItems>
                 </FooterLinksWrapper>
@@ -83,7 +83,7 @@ const Footer = () => {
                     </SocialLogo>
                     <WebsiteRights>Devsthali Brar Resort © 2021</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href='https://www.facebook.com/profile.php?id=100078939610119' target="_blank" aria-label="Facebook">
+                        <SocialIconLink href='https://www.facebook.com/Devsthali-Brar-Resort-101768892474406' target="_blank" aria-label="">
                             <FaFacebook/>
                         </SocialIconLink>
                         <SocialIconLink href='https://www.instagram.com/devsthalibrarresort/' target="_blank" aria-label="Instagram">

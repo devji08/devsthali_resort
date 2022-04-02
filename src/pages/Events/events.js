@@ -1,11 +1,10 @@
 import React from 'react';
-import CommingSoon from '../../components/CommingSoon/CommingSoon.js';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
+import { BreadcrumbProps } from './Data';
 
 const Events = () => {
     return (
-        <>
-            <CommingSoon/>
-        </>
+        <Breadcrumb props={BreadcrumbProps}/>
     );
 }
 

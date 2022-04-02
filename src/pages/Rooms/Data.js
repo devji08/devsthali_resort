@@ -95,3 +95,15 @@ export const SlideTwo = [
         subtitle: "Relive the splendour of a royal bygone era to its fullest."
     }
 ];
+
+export const BreadcrumbProps = {
+    img: Room_1,
+    alt: 'Image',
+    title: 'Rooms',
+    path: [
+        {
+            name: 'Rooms',
+            url: '/rooms'
+        },
+    ]
+};

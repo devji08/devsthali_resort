@@ -1,11 +1,13 @@
 import React from 'react';
 import ContactSection from '../../components/ContactSection/ContactSection';
-import {ContactObjOne} from './Data.js';
+import { ContactObjOne, BreadcrumbProps} from './Data.js';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
 const ContactUs = () => {
     return (
         <>
-        <ContactSection {...ContactObjOne}></ContactSection>
+            <Breadcrumb props={BreadcrumbProps}/>
+            <ContactSection {...ContactObjOne}></ContactSection>
         </>
     )
 }

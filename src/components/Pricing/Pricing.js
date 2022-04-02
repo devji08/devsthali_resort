@@ -30,15 +30,15 @@ function Pricing() {
             <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <TiGroup />
+                  <FaCrown />
                 </PricingCardIcon>
-                <PricingCardPlan>Group Trip</PricingCardPlan>
+                <PricingCardPlan>Week-end Package</PricingCardPlan>
                 <PricingCardCost>₹4500</PricingCardCost>
                 <PricingCardLength>Per room</PricingCardLength>
                 <PricingCardFeatures>
                   <PricingCardFeature>Triple room occupancy</PricingCardFeature>
                   <PricingCardFeature>Morning buffet</PricingCardFeature>
-                  <PricingCardFeature>Jungle Safari</PricingCardFeature>
+                  <PricingCardFeature>Hi-Tea</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
@@ -46,15 +46,15 @@ function Pricing() {
             <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <FaCrown />
+                <MdBusinessCenter />
                 </PricingCardIcon>
-                <PricingCardPlan>Royal Service</PricingCardPlan>
-                <PricingCardCost>₹3500</PricingCardCost>
+                <PricingCardPlan>2N/3D Package</PricingCardPlan>
+                <PricingCardCost>₹7000</PricingCardCost>
                 <PricingCardLength>Per room</PricingCardLength>
                 <PricingCardFeatures>
                   <PricingCardFeature>Triple meal</PricingCardFeature>
-                  <PricingCardFeature>Gym & Spa</PricingCardFeature>
-                  <PricingCardFeature>Jungle Safari</PricingCardFeature>
+                  <PricingCardFeature>Bon Fire</PricingCardFeature>
+                  <PricingCardFeature>Games</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
@@ -62,14 +62,14 @@ function Pricing() {
             <PricingCard to='/contact-us'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <MdBusinessCenter />
+                <TiGroup />
                 </PricingCardIcon>
-                <PricingCardPlan>Bussiness Trip</PricingCardPlan>
+                <PricingCardPlan>Family Package</PricingCardPlan>
                 <PricingCardCost>₹3000</PricingCardCost>
                 <PricingCardLength>Per room</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>Conference Hall</PricingCardFeature>
-                  <PricingCardFeature>Morning Buffet</PricingCardFeature>
+                  <PricingCardFeature>Triple Meal</PricingCardFeature>
+                  <PricingCardFeature>Double occupancy</PricingCardFeature>
                   <PricingCardFeature>24/7 Support</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
