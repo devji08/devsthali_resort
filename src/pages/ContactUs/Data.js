@@ -28,3 +28,11 @@ export const ContactObjOne = {
     statement3: 'If you are a phone person, feel free to give us a call at +91 88825 48248',
     statement4: 'Looking for support? Visit the Devsathali Support Center or email devsthalibrarresort@gmail.com'
 }
+
+export const salesOfficeObj = {
+    title: 'Corporate Office',
+    address: 'Rohit House, Tolstoy Rd, Barakhamba, New Delhi, Delhi 110001',
+    direction: 'https://g.page/rohit-house?share',
+    phone: '+91 88825 48248',
+    email: 'booking@devsthalihotelsandresorts.com'
+}

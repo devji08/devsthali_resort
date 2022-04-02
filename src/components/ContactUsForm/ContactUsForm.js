@@ -11,8 +11,6 @@ const ContactUsForm = () => {
         query: ''
     });
     
-    console.log(toSend);
-
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };

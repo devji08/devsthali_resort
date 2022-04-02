@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './RoomSection.module.css'
 import Carousel from '../Carousel/Carousel.js';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
-function RoomSection ({slides, content}) {
-    const navigate = useNavigate();
+function RoomSection ({slides, content, openModal}) {
+    // const navigate = useNavigate();
 
     return(
         <div className={styles.container}>
@@ -26,8 +26,9 @@ function RoomSection ({slides, content}) {
                 </ul>
             </div>
             <div className={styles.button_div}>
-                <button className={styles.button} onClick = {() => navigate("/contact-us")} >Book Now</button>
-            </div>
+                {/* <button className={styles.button} onClick = {() => navigate("/contact-us")} >Book Now</button> */}
+                <button className={styles.button} onClick = {() => openModal()} >Book Now</button>
+                </div>
         </div>
     )
 }
