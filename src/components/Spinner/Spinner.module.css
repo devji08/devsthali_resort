@@ -1,0 +1,13 @@
+.spinner_container
+{
+    z-index: 99;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+
+}
+
+/* Upper id css is in styles.css */

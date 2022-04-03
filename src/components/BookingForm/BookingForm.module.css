@@ -76,6 +76,12 @@
 
 .formRow {
     padding: .5rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.formCol {
+    flex: 1;
 }
 
 .label {
@@ -112,4 +118,7 @@
     padding: .5rem;
     color: white;
     background-color: #4B59f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

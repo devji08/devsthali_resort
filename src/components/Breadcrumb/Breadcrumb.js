@@ -22,7 +22,7 @@ export default function Breadcrumb({props}) {
             <div className={styles.path}>
                 <Link to='/' className={styles.path}>Home</Link>
                 {
-                    props.path.map((p) => <Link to={p.url} className={`${styles.path} ${styles.activePath}`}>{p.name}</Link>)
+                    props.path.map((p) => <Link to={p.url} className={`${styles.path} ${styles.activePath}`} key={p.url}>{p.name}</Link>)
                 }
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from './ContactUsForm.module.css';
 import { send } from 'emailjs-com';
+import Spinner from '../Spinner/Spinner';
 
 const ContactUsForm = () => {
     const [toSend, setToSend] = useState({
@@ -10,6 +11,8 @@ const ContactUsForm = () => {
         phone: '',
         query: ''
     });
+
+    const [isLoading, setIsLoading] = useState(false);
     
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -17,22 +20,26 @@ const ContactUsForm = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-    
+        setIsLoading(true);
+
         var templateParams = {
             from_name: 'DBR',
-            to_name: 'Team',
-            message: 'Name: ' + toSend.firstname + " " + toSend.lastname + '\nEmail: ' + toSend.email + '\nPhone: ' + toSend.phone + "\nQuery: " + toSend.query
+            to_name: 'Sales Team',
+            firstname: toSend.firstname,
+            lastname: toSend.lastname,
+            email: toSend.email,
+            phone: toSend.phone,
+            query: toSend.query
         }
         
-        console.log("help\n", templateParams);
-
         send(
             'service_5thvdtl',
-            'template_6jwm1wg',
+            'template_thpdd7r',
             templateParams,
             '8WcsRXP72BffuKvQs'
         )
         .then((response) => {
+            setIsLoading(false);
             console.log('SUCCESS!', response.status, response.text);
         })
         .catch((err) => {
@@ -102,7 +109,9 @@ const ContactUsForm = () => {
                         placeholder='Place your query here...' 
                         onChange={handleChange} required/>
             </div>
-            <button className={styles.submitButton} type='submit'>Submit</button>
+            <button className={styles.submitButton} type='submit'>
+                {isLoading ? <Spinner/> : 'Submit'}
+            </button>
             <span className={styles.terms}>By clicking submit, you agree to Devsathali Terms and processing of your personal data as described in our Privacy Policy.</span>
         </form>
     )

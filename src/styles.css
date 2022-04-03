@@ -20,4 +20,24 @@
     src: local("Barbershop-in-Thailand"),
      url("./fonts/barbershop-in-thailand/Barbershop-in-Thailand.ttf") format("truetype");
     font-weight: bold;
-} 
+}
+
+#upper
+
+{
+    animation: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
