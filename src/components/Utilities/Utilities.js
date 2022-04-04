@@ -11,7 +11,7 @@ const Utilities = ({utilityArray}) => {
                 {
                     utilityArray.map((utility) => {
                         return(
-                            <div className={styles.utility}>
+                            <div className={styles.utility} key={utility.name}>
                                 <div className={styles.utilityImage}>{utility.img}</div>
                                 <span className={styles.utilityName}>{utility.name}</span>
                             </div>

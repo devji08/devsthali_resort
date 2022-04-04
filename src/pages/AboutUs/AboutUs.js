@@ -1,9 +1,13 @@
 import React from 'react'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb.js';
-import { BreadcrumbProps } from './Data.js';
+import AboutSection from '../../components/AboutSection/AboutSection.js';
+import { BreadcrumbProps, AboutSectionProps } from './Data.js';
 
 export default function AboutUs() {
   return (
-    <Breadcrumb props={BreadcrumbProps}/>
+    <>
+      <Breadcrumb props={BreadcrumbProps}/>
+      <AboutSection {...AboutSectionProps}/>
+    </>
   )
 }
