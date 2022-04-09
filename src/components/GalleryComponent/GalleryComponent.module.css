@@ -1,0 +1,43 @@
+.container {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.title {
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 4px solid #444;
+    width: 33%;
+    margin: 2rem;
+}
+
+.media_scoller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0 1rem 1rem;
+
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+
+.media_element {
+    padding: 1rem;
+    scroll-snap-align: start;
+}
+
+.media_element:hover {
+    transform: scale(1.02);
+    transition: all 0.4s ease-out;
+}
+
+.img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.75);
+}
+
