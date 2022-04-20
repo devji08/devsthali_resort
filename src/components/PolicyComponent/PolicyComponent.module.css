@@ -1,0 +1,43 @@
+.container {
+    padding: 1rem 10rem;
+}
+
+.title {
+    color: #101522;
+    padding: 10px 0;
+    border-bottom: 4px solid #444;
+    width: 66%;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contentContainer {
+    padding: 10px 0;
+}
+
+.contentTitle {
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding-right: .5rem;
+}
+
+.contentContent {
+    color: rgba(0,0,0,.6);
+}
+
+.footer {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .footer {
+        font-size: 2rem;
+    }
+}

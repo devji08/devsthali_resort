@@ -6,6 +6,8 @@ import ContactUs from '../pages/ContactUs/contactUs';
 import AboutUs from '../pages/AboutUs/AboutUs';
 import Gallery from '../pages/Gallery/Gallery';
 import Events from '../pages/Events/events';
+import TermsAndConditions from '../pages/TermsAndConditions/TermsAndConditions';
+import PrivacyPolicy from '../pages/PrivacyPolicy/PrivacyPolicy';
 import Header from '../components/Header/header';
 import Footer from '../components/Footer/Footer';
 import GlobalStyles from '../globalStyles'
@@ -23,7 +25,9 @@ const Routes = () => {
                 <Route exact path = '/contact-us' element= {<ContactUs/>}/>
                 <Route exact path = '/events' element= {<Events/>}/>
                 <Route exact path = '/about-us' element= {<AboutUs/>}/>
-                <Route exact path = '/Gallery' element= {<Gallery/>}/>
+                <Route exact path = '/gallery' element= {<Gallery/>}/>
+                <Route exact path = '/terms-conditions' element= {<TermsAndConditions/>}/>
+                <Route exact path = '/privacy-policy' element= {<PrivacyPolicy/>}/>
             </Switch>
             <Footer/>
         </Router>

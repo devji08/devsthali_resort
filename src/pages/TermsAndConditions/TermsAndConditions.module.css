@@ -1,0 +1,35 @@
+.container {
+    padding: 1rem 10vw;
+    display: grid;
+    gap: 25px;
+}
+
+.title {
+    color: #101522;
+    padding: 10px 0;
+    border-bottom: 4px solid #444;
+    width: 66%;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title2 {
+    font-size: 1.5rem;
+    color: #232d47;
+    padding: 5px 1vw;
+}
+
+.content {
+    color: rgba(0,0,0,.6);
+    padding: 0 2vw;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .title {
+        width: 85%;
+    }
+}

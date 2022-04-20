@@ -45,8 +45,8 @@ const Footer = () => {
                         <FooterLinkTitle>Explore & Experience</FooterLinkTitle>
                         <FooterLink to='/rooms'>Rooms</FooterLink>
                         <FooterLink to='/gallery'>Gallery</FooterLink>
-                        <FooterLink to='/'>Career</FooterLink>
-                        <FooterLink to='/'>Investors</FooterLink>
+                        <FooterLink to='/about-us'>About Us</FooterLink>
+                        <FooterLink to='/contact-us'>Contact Us</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Celebrate</FooterLinkTitle>
@@ -58,11 +58,11 @@ const Footer = () => {
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
                     <FooterLinksItems>
-                        <FooterLinkTitle>Discover</FooterLinkTitle>
-                        <FooterLink to='/about-us'>About Us</FooterLink>
-                        <FooterLink to='/'>The Press Room</FooterLink>
-                        <FooterLink to='/'>Our Newsletter</FooterLink>
-                        <FooterLink to='/'>Our Blog</FooterLink>
+                        <FooterLinkTitle>Policies</FooterLinkTitle>
+                        <FooterLink to='/terms-conditions'>Terms & Conditions</FooterLink>
+                        <FooterLink to='/privacy-policy'>Privacy Policy</FooterLink>
+                        <FooterLink to='/'>Cancellation Policy</FooterLink>
+                        <FooterLink to='/'>FAQs</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Social Media</FooterLinkTitle>

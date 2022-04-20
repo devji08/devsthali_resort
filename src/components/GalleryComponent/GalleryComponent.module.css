@@ -22,7 +22,6 @@
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem;
 }
-
 .media_element {
     padding: 1rem;
     scroll-snap-align: start;
@@ -41,3 +40,23 @@
     box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.75);
 }
 
+@media screen and (max-width: 500px) {
+    .title {
+        width: 75%;
+        padding: .25rem;
+    }
+
+    .media_scoller {
+        grid-auto-columns: 80%;
+        gap: .25rem;
+        padding: 0 .25rem .25rem;
+    }
+
+    .media_element {
+        padding: .5rem;
+    }
+
+    .img {
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+}
