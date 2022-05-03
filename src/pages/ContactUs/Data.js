@@ -25,7 +25,7 @@ export const ContactObjOne = {
     alt: 'Image',
     title2: 'Write To Us',
     statement2: 'Tell us a little bit more about your organization and we will get in touch with you. ',
-    statement3: 'If you are a phone person, feel free to give us a call at +91 88825 48248',
+    statement3: 'If you are a phone person, feel free to give us a call at +91 92581 27263',
     statement4: 'Looking for support? Visit the Devsathali Support Center or email devsthalibrarresort@gmail.com'
 }
 
