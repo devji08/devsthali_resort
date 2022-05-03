@@ -6,13 +6,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 3rem;
-    color: rgba(255, 255, 255, .5);
+    font-size: 3.5rem;
+    color: rgba(0,0,0, .5);
     z-index: 2;
     cursor: pointer;
-    padding: 0 .5rem;
-    border-radius: .25rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5rem;
+    background-color: rgba(255,255,255, .5);
 }
 
 .arrowButton:hover {
@@ -48,23 +48,15 @@
 .carouselImg {
     width: 100%;
     object-fit: cover;
-    /* grid-row: 1/2;
-    grid-column: 1/2; */
 }
 
 .imgText {
-    /* grid-row : 1/2;
-    grid-column: 1/2; */
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction:column; */
-    /* justify-content:flex-end; */
-    /* padding: 10px; */
     text-align: center;
-    /* text-shadow: 1px 5px 10px #000000; */
     background-color: rgba(0, 0, 0, .5);
     width: 100vw;
     color: white;
@@ -98,26 +90,19 @@
     gap: 1rem;
     justify-content: center;
     width: 100%;
-    bottom: 15px;
-}
-
-.slideButtonContainer {
-    border-radius: .25rem;
-    display: flex;
-    height: .5rem;
-    padding: 5px;
-    align-items: center;
-    cursor: pointer;
-    transition: 1000ms ease;
-}
-
-.activeSlideButtonContainer, .slideButtonContainer:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 1.5rem;
 }
 
 .slideButton {
-    width: 2rem;
-    height: .125rem;
+    aspect-ratio: 1/1;
+    height: .5rem;
+    border-radius: 100%;
     border: none;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .3);
+    transition: all 500ms ease;
+}
+
+.activeSlideButton, .slideButton:hover {
+    background-color: white;
+    transform: scale(1.2);
 }

@@ -8,7 +8,7 @@ import { homeObjOne, homeObjTwo, homeObjFour, utilityArray } from './Data';
 const Home = () => {
     return(
         <>
-            <Carousel height='70vh' slides = {homeObjFour} slideButton tabButton imageDescription/>
+            <Carousel height='90vh' slides = {homeObjFour} slideButton tabButton imageDescription/>
             <Utilities utilityArray={utilityArray}/>
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>

@@ -12,6 +12,8 @@ import Swing from '../../images/Swing.jpg';
 import Restaurant_1 from '../../images/Restaurant_1.jpg';
 import Restaurant_2 from '../../images/Restaurant_2.jpg';
 import Restaurant_3 from '../../images/Restaurant_3.jpg';
+import Swimming_Pool from '../../images/Swimming_Pool.jpeg';
+import Swimming_Pool_1 from '../../images/Swimming_Pool_1.jpeg';
 
 export const BreadcrumbProps = {
     img: Room_1,
@@ -63,7 +65,15 @@ export const GalleryObjTwo = {
     title: 'Our Ambience',
     array: [
         {
+            img: Swimming_Pool,
+            alt: 'Image'
+        },
+        {
             img: Back_Hut,
+            alt: 'Image'
+        },
+        {
+            img: Swimming_Pool_1,
             alt: 'Image'
         },
         {

@@ -5,7 +5,7 @@ const Utilities = ({utilityArray}) => {
     return(
         <div className={styles.container}>
             <div className = {styles.header}>
-                Book Direct
+                Our Amenities
             </div>
             <div className={styles.utilities}>
                 {

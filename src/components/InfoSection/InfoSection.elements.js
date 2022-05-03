@@ -65,16 +65,18 @@ color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
 `;
 
 export const ImgWrapper = styled.div`
-max-width: 555px;
+padding: 0;
+border: 0;
 display: flex;
 justify-content: ${({start}) => (start ? 'flex-start' : 'flex-end')};
+height: 100%;
 `;
 
 export const Img = styled.img`
-padding-right: 0;
+padding: 0;
 border: 0;
 max-width: 100%;
 vertical-align: middle;
 display: inline-block;
-max-height: 500px;
+height: 100%;
 `;

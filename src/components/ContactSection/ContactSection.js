@@ -16,6 +16,8 @@ const ContactSection = ({title, statement, resort, address, direction, phone, em
                         <p className={styles.contactDetail}>Email: {email}</p>
                         <a className={styles.direction} href={direction} target = '_blank' rel='noreferrer'>Get Direction →</a>
                     </div>
+                </div>
+                <div className={styles.col}>
                     <h1 className={styles.title}>{salesObj.title}</h1>
                     <h2 className={styles.statement}>{salesObj.statement}</h2>
                     <div className={styles.contactWrapper}>
@@ -24,11 +26,9 @@ const ContactSection = ({title, statement, resort, address, direction, phone, em
                         <p className={styles.contactDetail}>Email: {salesObj.email}</p>
                         <a className={styles.direction} href={salesObj.direction} target = '_blank' rel='noreferrer'>Get Direction →</a>
                     </div>
-                </div>
-                <div className={styles.col}>
-                    <div className={styles.imgWrapper}>
+                    {/* <div className={styles.imgWrapper}>
                         <img className={styles.img} src={img} alt = 'something'/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className={styles.line}></div>
