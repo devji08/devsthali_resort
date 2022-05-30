@@ -12,24 +12,27 @@ import Header from '../components/Header/header';
 import Footer from '../components/Footer/Footer';
 import GlobalStyles from '../globalStyles'
 import ScrollToTop from '../components/ScrollToTop';
+import NotFound from '../components/NotFound/NotFound';
+
 
 const Routes = () => {
     return(
         <Router>
             <GlobalStyles/>
             <ScrollToTop/>
-            <Header/>
+            {/* <Header/> */}
             <Switch>
-                <Route exact path = '/' element = {<Home/>}/>
+                {/* <Route exact path = '/' element = {<Home/>}/>
                 <Route exaxt path = '/rooms' element = {<Rooms/>}/>
                 <Route exact path = '/contact-us' element= {<ContactUs/>}/>
                 <Route exact path = '/events' element= {<Events/>}/>
                 <Route exact path = '/about-us' element= {<AboutUs/>}/>
                 <Route exact path = '/gallery' element= {<Gallery/>}/>
                 <Route exact path = '/terms-conditions' element= {<TermsAndConditions/>}/>
-                <Route exact path = '/privacy-policy' element= {<PrivacyPolicy/>}/>
+                <Route exact path = '/privacy-policy' element= {<PrivacyPolicy/>}/> */}
+                <Route exact path = '/' element = {<NotFound/>}/>
             </Switch>
-            <Footer/>
+            {/* <Footer/> */}
         </Router>
     )
 }
